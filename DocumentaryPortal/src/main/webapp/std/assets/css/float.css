@@ -1,0 +1,32 @@
+
+.ffl-wrapper {
+    @include floating-form-labels(1.25rem, 1rem);
+}
+
+
+
+.ffl-label {
+    color: $label-color;
+    line: {
+        height: 1.2;
+    }
+    .ffl-floated & {
+        color: $label-color-active;
+        font: {
+            size: 1.5rem;
+        }
+    }    
+}
+
+.card {
+    max-width: 45rem;
+    margin: 2rem auto 0;
+    background-color: #ffffff;
+    padding: 2rem;
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
